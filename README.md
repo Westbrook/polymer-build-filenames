@@ -34,3 +34,56 @@ bower install
 yarn link polymer-cli
 yarn build
 ```
+Expect to see output like:
+```bash
+yarn run v1.6.0
+$ polymer build --preset es5-bundled
+info: [cli.command.build]    Clearing build/ directory...
+info: [cli.build.build]    (es5-bundled) Building...
+/Users/you/Documents/web/repos/new-repo/index.html_script_0.js
+/Users/westbrook/Documents/web/repos/new-repo/index.html_script_0.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_1.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_1.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_2.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_2.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_3.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_3.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_4.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_4.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_5.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_5.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_6.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_6.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_7.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_7.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_8.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_8.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_9.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_9.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_10.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_10.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_11.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_11.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_12.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_12.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_13.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_13.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_14.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_14.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_15.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_15.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_16.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_16.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_17.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_17.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_18.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_18.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_19.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_19.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_20.js
+/Users/you/Documents/web/repos/new-repo/index.html_script_20.js
+/Users/you/Documents/web/repos/new-repo/index.html
+/Users/you/Documents/web/repos/new-repo/index.html
+info: [cli.build.build]    (es5-bundled) Build complete!
+✨  Done in 6.43s.
+```
