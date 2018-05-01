@@ -6,7 +6,7 @@ git clone https://github.com/Polymer/tools.git
 cd tools/packages/build
 yarn
 ```
-At this point, if you'd like to see the file names as they are processed, open `build/src/optimize-streams.ts` and update the method `notExcluded` at about line 258 to include the following:
+At this point, if you'd like to see the file names as they are processed, open `tools/packages/build/src/optimize-streams.ts` and update the method `notExcluded` at about line 258 to include the following:
 ```js
 function notExcluded(option: boolean|{exclude?: string[]}) {
   const exclude = typeof option === 'object' && option.exclude || [];
