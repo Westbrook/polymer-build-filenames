@@ -1,0 +1,6 @@
+{
+  "name": "new-repo",
+  "short_name": "new-repo",
+  "start_url": "/",
+  "display": "standalone"
+}
