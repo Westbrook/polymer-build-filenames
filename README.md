@@ -1,33 +1,36 @@
-# \<new-repo\>
-
-
-
-## Install the Polymer-CLI
-
-First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your application locally.
-
-## Viewing Your Application
-
+On the command line:
+```bash
+mkdir build-test
+cd build-test
+git clone https://github.com/Polymer/tools.git
+cd tools/packages/build
+yarn
 ```
-$ polymer serve
+At this point, if you'd like to see the file names as they are processed, open `build/src/optimize-streams.ts` and update the method `notExcluded` at about line 258 to include the following:
+```js
+function notExcluded(option: boolean|{exclude?: string[]}) {
+  const exclude = typeof option === 'object' && option.exclude || [];
+  return (fs: vinyl) => {
+    console.log(fs.path);
+    return !exclude.some(
+             (pattern: string) => matcher.isMatch(fs.relative, pattern));
+           }
+}
 ```
-
-## Building Your Application
-
+Back on the command line:
+```bash
+yarn build
+yarn link
+cd ../cli
+yarn
+yarn link polymer-build
+yarn build
+yarn link
+cd ../../../
+git clone https://github.com/Westbrook/polymer-build-filenames.git
+cd polymer-build-filenames
+yarn
+bower install
+yarn link polymer-cli
+yarn build
 ```
-$ polymer build
-```
-
-This will create builds of your application in the `build/` directory, optimized to be served in production. You can then serve the built versions by giving `polymer serve` a folder to serve from:
-
-```
-$ polymer serve build/default
-```
-
-## Running Tests
-
-```
-$ polymer test
-```
-
-Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
